@@ -1,0 +1,107 @@
+# ─────────────────────────────────────────────────────────────
+# Jekyll configuration for Armila's Restaurant & Lounge
+# ─────────────────────────────────────────────────────────────
+# This site is built as static HTML and does not require Jekyll
+# to render. The .nojekyll file in this directory tells GitHub
+# Pages to skip Jekyll processing entirely.
+#
+# This _config.yml is kept for two reasons:
+#   1. Documentation of site metadata in one place
+#   2. Future-proofing if you ever want to enable Jekyll plugins
+#      (just delete .nojekyll to activate)
+# ─────────────────────────────────────────────────────────────
+
+title: "Armila's Restaurant & Lounge"
+tagline: "Hamilton's First Afghan Restaurant, Lounge & Sports Bar"
+description: >-
+  Hamilton's first authentic Afghan restaurant and lounge. Flame-grilled kababs,
+  Kabuli palaw, mantu, mocktails, shisha, catering, and the biggest screens in
+  the city for NBA, FIFA, NFL, NHL, MLB, and UFC. Open late, every night. Halal.
+
+url: "https://armilaslounge.com"
+baseurl: ""
+
+# ── Author / Owner ──
+author:
+  name: "Armila's Restaurant & Lounge"
+  email: "info@armilaslounge.com"
+
+# ── Business Details ──
+business:
+  name: "Armila's Restaurant & Lounge"
+  type: "Restaurant"
+  cuisine: ["Afghan", "Halal", "Middle Eastern"]
+  price_range: "$$"
+  address:
+    street: "2200 Rymal Road East"
+    locality: "Hamilton"
+    region: "ON"
+    postal_code: "L0R 1P0"
+    country: "CA"
+  geo:
+    latitude: 43.1801
+    longitude: -79.8634
+  phone: "+1-289-674-9692"
+  hours:
+    monday:    { opens: "12:00", closes: "01:00" }
+    tuesday:   { opens: "12:00", closes: "01:00" }
+    wednesday: { opens: "12:00", closes: "01:00" }
+    thursday:  { opens: "12:00", closes: "02:00" }
+    friday:    { opens: "12:00", closes: "02:00" }
+    saturday:  { opens: "12:00", closes: "02:00" }
+    sunday:    { opens: "12:00", closes: "01:00" }
+  social:
+    instagram: "https://www.instagram.com/armilaslounge/"
+    tiktok: "https://www.tiktok.com/@armilaslounge"
+    ubereats: "https://www.ubereats.com/ca/store/armilas-restaurant/07x0-J-CTT-2ft-CLM0nZA"
+  amenities:
+    - "Halal"
+    - "Live Sports (NBA, FIFA, NFL, NHL, MLB, UFC)"
+    - "Shisha Lounge"
+    - "Hand-Crafted Mocktails"
+    - "Catering"
+    - "Private Events"
+    - "Late Night"
+    - "Free On-Site Parking"
+    - "Reservations Accepted"
+    - "Vegetarian Options"
+    - "Family Friendly"
+
+# ── SEO / Social ──
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: "/assets/og-image.jpg"
+      lang: "en-CA"
+      locale: "en_CA"
+
+# ── Build settings ──
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+timezone: America/Toronto
+
+# ── Files Jekyll should ignore if it ever runs ──
+exclude:
+  - README.md
+  - .gitignore
+  - api/
+  - "*.log"
+  - .DS_Store
+  - node_modules/
+  - vendor/
+
+# ── Plugins (require '.nojekyll' to be removed and Gemfile to be added to enable) ──
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# ── Build environment ──
+keep_files:
+  - assets
+
+# ── Compression ──
+sass:
+  style: compressed

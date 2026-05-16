@@ -1,0 +1,55 @@
+{
+  "name": "Armila's Restaurant & Lounge",
+  "short_name": "Armila's",
+  "description": "Hamilton's first authentic Afghan restaurant and lounge. Halal kitchen, biggest screens, open late.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F5EFE0",
+  "theme_color": "#4D5340",
+  "lang": "en-CA",
+  "categories": ["food", "lifestyle", "social"],
+  "icons": [
+    {
+      "src": "/assets/favicons/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/favicons/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/favicons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Reserve a Table",
+      "short_name": "Reserve",
+      "description": "Make a reservation at Armila's",
+      "url": "/#reserve",
+      "icons": [{ "src": "/assets/favicons/favicon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "View Menu",
+      "short_name": "Menu",
+      "description": "See the full menu",
+      "url": "/menu.html",
+      "icons": [{ "src": "/assets/favicons/favicon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Order on Uber Eats",
+      "short_name": "Order",
+      "description": "Order delivery and save 10%",
+      "url": "https://www.ubereats.com/ca/store/armilas-restaurant/07x0-J-CTT-2ft-CLM0nZA"
+    }
+  ]
+}

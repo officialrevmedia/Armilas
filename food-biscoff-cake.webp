@@ -1,0 +1,35 @@
+# Armila's Instagram Feed Worker - Cloudflare config
+#
+# Deploy with: wrangler deploy
+# After deploy, your endpoint will be at:
+#   https://armilas-instagram.<your-subdomain>.workers.dev/feed
+
+name = "armilas-instagram"
+main = "worker.js"
+compatibility_date = "2026-01-15"
+
+# Limit who can call this worker. Change to your production domain.
+[vars]
+ALLOWED_ORIGIN = "https://armilaslounge.com"
+
+# Monthly token refresh (1st of each month, 4 AM UTC).
+# Instagram long-lived tokens expire after 60 days; refreshing monthly
+# leaves a safe buffer.
+[triggers]
+crons = ["0 4 1 * *"]
+
+# Optional: bind a KV namespace to persist the refreshed token across
+# refresh cycles. Create the namespace with:
+#   wrangler kv:namespace create "IG_TOKEN_STORE"
+# Then paste the returned id below.
+#
+# [[kv_namespaces]]
+# binding = "IG_TOKEN_STORE"
+# id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+# Secrets are set via:
+#   wrangler secret put IG_ACCESS_TOKEN
+#   wrangler secret put IG_USER_ID
+#   wrangler secret put IG_APP_SECRET
+#   wrangler secret put ADMIN_KEY
+# Never commit secret values to this file.
