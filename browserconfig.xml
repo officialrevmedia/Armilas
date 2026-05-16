@@ -1,28 +1,9 @@
-# OS files
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Editor / IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# Logs
-*.log
-npm-debug.log*
-
-# Cloudflare Wrangler (for /api worker dev)
-.wrangler/
-.dev.vars
-
-# Node (if added later)
-node_modules/
-
-# Source / temp files
-*.psd
-*.ai
-*.sketch
-.tmp/
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+  <msapplication>
+    <tile>
+      <square150x150logo src="favicon-192x192.png"/>
+      <TileColor>#4D5340</TileColor>
+    </tile>
+  </msapplication>
+</browserconfig>
