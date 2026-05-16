@@ -1,55 +1,36 @@
-{
-  "name": "Armila's Restaurant & Lounge",
-  "short_name": "Armila's",
-  "description": "Hamilton's first authentic Afghan restaurant and lounge. Halal kitchen, biggest screens, open late.",
-  "start_url": "/",
-  "scope": "/",
-  "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#F5EFE0",
-  "theme_color": "#4D5340",
-  "lang": "en-CA",
-  "categories": ["food", "lifestyle", "social"],
-  "icons": [
-    {
-      "src": "/assets/favicons/favicon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "/assets/favicons/favicon-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "/assets/favicons/apple-touch-icon.png",
-      "sizes": "180x180",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Reserve a Table",
-      "short_name": "Reserve",
-      "description": "Make a reservation at Armila's",
-      "url": "/#reserve",
-      "icons": [{ "src": "/assets/favicons/favicon-192x192.png", "sizes": "192x192" }]
-    },
-    {
-      "name": "View Menu",
-      "short_name": "Menu",
-      "description": "See the full menu",
-      "url": "/menu.html",
-      "icons": [{ "src": "/assets/favicons/favicon-192x192.png", "sizes": "192x192" }]
-    },
-    {
-      "name": "Order on Uber Eats",
-      "short_name": "Order",
-      "description": "Order delivery and save 10%",
-      "url": "https://www.ubereats.com/ca/store/armilas-restaurant/07x0-J-CTT-2ft-CLM0nZA"
-    }
-  ]
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://armilaslounge.com/</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://armilaslounge.com/food-grand-platter.jpg</image:loc>
+      <image:title>Armila's Grand Meat Platter</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://armilaslounge.com/food-royal-qabli.jpg</image:loc>
+      <image:title>Royal Qabli Palaw — house signature</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://armilaslounge.com/interior-wide.jpg</image:loc>
+      <image:title>Inside Armila's Hamilton</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://armilaslounge.com/food-kabuli-closeup.jpg</image:loc>
+      <image:title>Qabli Palaw with Lamb Shank</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://armilaslounge.com/menu.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://armilaslounge.com/food-royal-qabli.jpg</image:loc>
+      <image:title>Royal Qabli Palaw — $32</image:title>
+    </image:image>
+  </url>
+</urlset>
